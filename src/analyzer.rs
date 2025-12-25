@@ -343,17 +343,44 @@ fn collect_java_references(node: Node, source: &str, refs: &mut Vec<ParsedRefere
 fn is_primitive_type(name: &str) -> bool {
     matches!(
         name,
-        "int" | "long" | "short" | "byte" | "float" | "double" | "boolean" | "char" | "void"
-            | "String" | "Object" | "Integer" | "Long" | "Short" | "Byte" | "Float" | "Double"
-            | "Boolean" | "Character" | "Void"
+        "int"
+            | "long"
+            | "short"
+            | "byte"
+            | "float"
+            | "double"
+            | "boolean"
+            | "char"
+            | "void"
+            | "String"
+            | "Object"
+            | "Integer"
+            | "Long"
+            | "Short"
+            | "Byte"
+            | "Float"
+            | "Double"
+            | "Boolean"
+            | "Character"
+            | "Void"
     )
 }
 
 fn is_common_method(name: &str) -> bool {
     matches!(
         name,
-        "toString" | "equals" | "hashCode" | "getClass" | "clone" | "notify" | "notifyAll" | "wait"
-            | "println" | "print" | "printf" | "format"
+        "toString"
+            | "equals"
+            | "hashCode"
+            | "getClass"
+            | "clone"
+            | "notify"
+            | "notifyAll"
+            | "wait"
+            | "println"
+            | "print"
+            | "printf"
+            | "format"
     )
 }
 
