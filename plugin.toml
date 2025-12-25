@@ -1,0 +1,12 @@
+[plugin]
+id = "adi.lang.java"
+name = "Java Language Support"
+version = "0.1.0"
+api_version = 2
+
+[language]
+id = "java"
+extensions = ["java"]
+
+[provides]
+services = ["adi.indexer.lang.java"]
